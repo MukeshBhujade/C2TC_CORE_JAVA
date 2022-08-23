@@ -1,12 +1,17 @@
 package com.cg.core;
 
+import java.util.Scanner;
+
 public class Amstrong {
 
 	public static void main(String[] args) {
-		int num=370,number,temp,total=0;
-		
+		int number,temp,total=0;
+	Scanner obj=new Scanner(System.in);
+	System.out.println("Enter the value on Number:");
+	int num=obj.nextInt();
+	
 		number=num;
-		while(number !=0) {
+		while(number!=0) {
 			temp=number%10;
 		total=total+temp;
 		number/=10;
